@@ -1,10 +1,23 @@
-
+import Head from "next/head"
+import Navbar from '../components/navbar/Navbar.jsx'
 
 
 
 export default function Home() {
   return (
-   <div>My Portfolio</div>
+   <div >
+<Head>
+  <title>
+    Ammar | Frondend Developer
+  </title>
+</Head>
+<div >
+
+<Navbar />
+</div>
+
+
+   </div>
      
   )
 }

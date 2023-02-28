@@ -3,6 +3,7 @@ import Head from "next/head"
 
 
 
+
 export default function Home() {
   return (
    <div >
@@ -11,6 +12,8 @@ export default function Home() {
     Ammar | Frondend Developer
   </title>
 </Head>
+
+
 <div >
 
 

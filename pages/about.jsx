@@ -1,7 +1,7 @@
 const About =()=> {
     return (
     
-    <div className="h-screen flex-col pt-28 sm:flex-row gap-2 flex items-center p-2 lg:p-10">
+    <div className="h-screen flex-col justify-center sm:justify-between pt-28 sm:flex-row md:gap-2 gap-6 flex items-center p-2 lg:p-10">
 
         <div>
             <h4>Hi,I am</h4>

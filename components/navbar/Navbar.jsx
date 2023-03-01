@@ -1,12 +1,14 @@
 import Image from "next/image"
 import Link from "next/link"
 import { useState,useEffect } from "react"
+
 import {RxHamburgerMenu} from 'react-icons/rx'
 import {IoMdClose} from 'react-icons/io'
 import {FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import {ImGithub} from 'react-icons/im'
 import {MdEmail} from 'react-icons/md'
+import { useRouter } from "next/router"
 const data =[
     {
     id:'1',
@@ -36,7 +38,8 @@ const data =[
 ]
 
 const Navbar =()=> {
-const [active,setActive]=useState('home')
+    const router=useRouter()
+const [active,setActive]=useState(router.pathname.slice(1)!==''?router.pathname.slice(1) : 'home')
 const [open,setOpen]=useState(false)
 const [back,setBack]=useState(false)
 
@@ -49,9 +52,13 @@ const setBackTrue=()=>{
     }
 }
     document.addEventListener('scroll',setBackTrue)
+    setBackTrue()
 
     return ()=> removeEventListener('scroll',setBackTrue)
 },[])
+
+
+
 
     return (
 <div className={`fixed h-20 w-full shadow-md  ${back &&'bg-[#ecf0f3]'}`}>

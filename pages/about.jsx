@@ -1,16 +1,19 @@
 const About =()=> {
     return (
-    
-    <div className="h-screen flex-col justify-center sm:justify-between pt-28 sm:flex-row md:gap-2 gap-6 flex items-center p-2 lg:p-10">
+    <div className=" px-2 lg:px-10 pt-28 h-screen">          
+         <p className="text-purple-600 uppercase my-6 font-medium tracking-widest">About</p>
+    <div className=" flex-col justify-center sm:justify-between sm:flex-row md:gap-2 gap-6 flex items-center">
 
         <div>
-            <h4>Hi,I am</h4>
-            <p className="text-base mb-3 text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
+ 
+            <h3 className="uppercase">who I am</h3>
+            <p className="text-base my-3 text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             <p className="text-base text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             </div>
         <div className="shadow-lg shadow-gray-400 rounded-md p-3 hover:scale-105 duration-300">
             <img src='/assets/Labtop.jpeg' />
         </div>
+    </div>
     </div>
     )
 }

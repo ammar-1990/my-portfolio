@@ -13,38 +13,43 @@ const data =[
     {
     id:'1',
     name:'home',
-    to:'/'
+    to:'#home'
 },
     {
     id:'2',
     name:'about',
-    to:'/about'
+    to:'#about'
 },
     {
     id:'3',
     name:'skills',
-    to:'/skills'
+    to:'#skills'
 },
     {
     id:'4',
     name:'projects',
-    to:'/projects'
+    to:'#projects'
 },
     {
     id:'5',
     name:'contact',
-    to:'/contact'
+    to:'#contact'
 },
 ]
 
 const Navbar =()=> {
     const router=useRouter()
-const [active,setActive]=useState(router.pathname.slice(1)!==''?router.pathname.slice(1) : 'home')
+const [active,setActive]=useState('')
 const [open,setOpen]=useState(false)
 const [back,setBack]=useState(false)
 
 useEffect(()=>{
+ 
+    setActive(router?.asPath?.slice(2)===''?'home': router?.asPath?.slice(2))
 const setBackTrue=()=>{
+  
+   
+
     if(window.scrollY>5)
     setBack(true)
     else{
@@ -58,17 +63,51 @@ const setBackTrue=()=>{
 },[])
 
 
+useEffect(()=>{
+
+    const sections=()=>{
+        let height =screen.availHeight
+      
+        let top =screenTop
+      
+        let all=[...document.querySelectorAll(".section")]
+        all.forEach((el)=>{
+            let size = el.getBoundingClientRect()
+            if(size.top >= top && size.top <= height/2)
+            {
+            
+       
+        
+ 
+            history.pushState('','',`#${el.id}`)
+              setActive(el.id)
+             
+            
+           
+            }
+          
+        })
+    }
+document.addEventListener('scroll',sections)
+
+
+return ()=>removeEventListener('scroll',sections)
+
+},[])
+
+
 
 
     return (
 <div className={`fixed h-20 w-full shadow-md  ${back &&'bg-[#ecf0f3]'}`}>
+
     
     <div className={`p-2 lg:p-10 h-full flex justify-between items-center`}>
-        <Link onClick={()=>setActive('home')} href='/'>
+        <a onClick={()=>setActive('home')} href='#home'>
 <Image alt="img" src={'/assets/Logo.png'}  width={ 125} height={100}/>
-</Link>
+</a>
         <ul className="hidden md:flex items-center gap-10">
-{data.map(el=><Link onClick={()=>setActive(el.name)} key={el.id} href={el.to}><li className={`uppercase hover:text-purple-700 font-medium transition duration-300 text-sm ${active===el.name && 'text-purple-700'}`}>{el.name}</li></Link>)}
+{data.map(el=><a key={el.id} href={el.to}><li className={`uppercase hover:text-purple-700 font-medium transition duration-300 text-sm ${active===el.name && 'active'}`}>{el.name}</li></a>)}
         </ul>
 
         <span className="flex items-center justify-center md:hidden cursor-pointer text-[#1f2937] " onClick={()=>setOpen(true)}><RxHamburgerMenu size={'30px'}  /></span>
@@ -85,7 +124,7 @@ const setBackTrue=()=>{
        </div>
 
        <ul className="mt-8 flex flex-col gap-5">
-        {data.map(el=><li onClick={()=>{setActive(el.name);setOpen(false)}} className={`uppercase text-sm hover:text-purple-700 duration-300 ${active===el.name? 'text-purple-700' : 'text-gray-700'} cursor-pointer font-medium `} key={el.id}>{el.name}</li>)}
+        {data.map(el=><a key={el.id} href={el.to}><li onClick={()=>{setActive(el.name);setOpen(false)}} className={`uppercase text-sm hover:text-purple-700 duration-300 ${active===el.name? 'text-purple-700' : 'text-gray-700'} cursor-pointer font-medium `} >{el.name}</li></a>)}
        </ul>
 <div className="mt-auto"> <p className='uppercase text-purple-700 tracking-widest font-medium'>Let,s conect</p></div>
       <div className="mt-3 flex items-center justify-between">

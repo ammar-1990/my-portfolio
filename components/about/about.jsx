@@ -1,6 +1,6 @@
 const About =()=> {
     return (
-    <div className=" px-2 lg:px-10 pt-28 h-screen">          
+    <div className=" px-2 lg:px-10 pt-16 h-screen section" id='about'>          
          <p className="text-purple-600 uppercase my-6 font-medium tracking-widest">About</p>
     <div className=" flex-col justify-center sm:justify-between sm:flex-row md:gap-2 gap-6 flex items-center">
 

@@ -6,7 +6,7 @@ const About =()=> {
 
         <div>
  
-            <h3 className="uppercase">who I am</h3>
+            <h3 className="uppercase text-gray-600">who I am</h3>
             <p className="text-base my-3 text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             <p className="text-base text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             </div>

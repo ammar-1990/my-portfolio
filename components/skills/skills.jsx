@@ -19,7 +19,7 @@ const data = [
     id:'a3',
     name:'JavaScript',
     img:'/assets/JS.png',
-    level:'80%'
+    level:'85%'
   },
   {
     id:'a4',
@@ -31,19 +31,19 @@ const data = [
     id:'a5',
     name:'Tailwind',
     img:'/assets/Tailwind.png',
-    level:'80%'
+    level:'85%'
   },
   {
     id:'a6',
     name:'React JS',
     img:'/assets/React.png',
-    level:'80%'
+    level:'85%'
   },
   {
     id:'a7',
     name:'Redux Toolkit',
     img:'/assets/Redux.png',
-    level:'80%'
+    level:'85%'
   },
   {
     id:'a8',
@@ -61,13 +61,13 @@ const data = [
     id:'a10',
     name:'Next JS',
     img:'/assets/Next.png',
-    level:'80%'
+    level:'85%'
   },
   {
     id:'a11',
     name:'Sass',
     img:'/assets/Sass.png',
-    level:'60%'
+    level:'75%'
   },
   {
     id:'a12',
@@ -79,13 +79,13 @@ const data = [
     id:'a13',
     name:'Git Hub',
     img:'/assets/Git hub.png',
-    level:'60%'
+    level:'75%'
   },
   {
     id:'a14',
     name:'FireBase',
     img:'/assets/FireBase.png',
-    level:'50%'
+    level:'70%'
   },
 ]
 

@@ -8,7 +8,7 @@ const HomeSection = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center section" id='home'>
   <div> <p className="text-gray-600 uppercase text-center text-sm mb-3">let,s build something together</p>
-  <h1 className="text-center">Hi, I'm <span className="text-purple-700 ">Ammar</span></h1>
+  <h1 className="text-center mb-4">Hi, I'm <span className="text-purple-700 ">Ammar</span></h1>
   <h1 className="text-center">A Front-End Developer</h1>
   <p className="mx-auto text-center w-[90%] sm:w-1/2 md:w-1/3 mt-4 text-gray-600">lorem20 asd nsanbd asbd jashdjk hasjhd jashjkah jdh jkash jkhasljdh jasld halskjhd jkashd lahsdjk haslkjd hajkshd ljkashd jkhaskjd halkjshd kjashdj hasj hlasjh djashd jkashd kjahsdj haslkjd haskjh dakjshd </p>
 

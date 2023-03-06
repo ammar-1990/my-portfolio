@@ -13,27 +13,27 @@ const data = [
   {
     id: "1",
     name: "home",
-    to: "#home",
+    to: "/#home",
   },
   {
     id: "2",
     name: "about",
-    to: "#about",
+    to: "/#about",
   },
   {
     id: "3",
     name: "skills",
-    to: "#skills",
+    to: "/#skills",
   },
   {
     id: "4",
     name: "projects",
-    to: "#projects",
+    to: "/#projects",
   },
   {
     id: "5",
     name: "contact",
-    to: "#contact",
+    to: "/#contact",
   },
 ];
 
@@ -41,25 +41,26 @@ const Navbar = () => {
   const router = useRouter();
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
-  const [back, setBack] = useState(false);
+  const [shadow, setShadow] = useState(false);
+
+  useEffect(() => {
+   
+    const setShadowTrue = () => {
+      if (window.scrollY > 60) setShadow(true);
+      else {
+        setShadow(false);
+      }
+    };
+    document.addEventListener("scroll", setShadowTrue);
+    setShadowTrue();
+
+    return () => removeEventListener("scroll", setShadowTrue);
+  }, []);
 
   useEffect(() => {
     setActive(
       router?.asPath?.slice(2) === "" ? "home" : router?.asPath?.slice(2)
     );
-    const setBackTrue = () => {
-      if (window.scrollY > 5) setBack(true);
-      else {
-        setBack(false);
-      }
-    };
-    document.addEventListener("scroll", setBackTrue);
-    setBackTrue();
-
-    return () => removeEventListener("scroll", setBackTrue);
-  }, []);
-
-  useEffect(() => {
     const sections = () => {
       let height = screen.availHeight;
 
@@ -72,6 +73,7 @@ const Navbar = () => {
           history.pushState("", "", `#${el.id}`);
           setActive(el.id);
         }
+        
       });
     };
     document.addEventListener("scroll", sections);
@@ -80,14 +82,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={`fixed h-20 w-full shadow-md  ${back && "bg-[#ecf0f3]"} z-40`}>
+    <div className={`fixed h-20 w-full  top-0  ${shadow && "shadow-md"} duration-300 z-40`}>
       <div className={`p-2 lg:p-10 h-20 flex justify-between items-center`}>
-        <a onClick={() => setActive("home")} href="#home">
+        <Link scroll={false} onClick={() => setActive("home")} href="/#home">
           <Image alt="img" src={"/assets/Logo.png"} width={125} height={100} />
-        </a>
+        </Link>
         <ul className="hidden md:flex items-center h-20">
           {data.map((el) => (
-            <a key={el.id} href={el.to}>
+            <Link scroll={false} key={el.id} href={el.to}>
               <li
                 className={`uppercase hover:text-purple-700 h-20 flex items-center justify-center px-6 font-medium transition duration-300 text-sm ${
                   active === el.name && "active"
@@ -95,7 +97,7 @@ const Navbar = () => {
               >
                 {el.name}
               </li>
-            </a>
+            </Link>
           ))}
         </ul>
 
@@ -119,7 +121,8 @@ const Navbar = () => {
       >
         <div className="border-b border-gray-300">
           <div className="flex justify-between items-center ">
-            <Image alt="img" src={"/assets/Logo.png "} width={87} height={35} />
+            <Link scroll={false} href='/#home' onClick={()=>setOpen(false)}><Image alt="img" src={"/assets/Logo.png "} width={87} height={35} /></Link>
+            
             <span
               className="flex justify-center items-center cursor-pointer w-10 h-10 rounded-full shadow-lg hover:scale-105 duration-200 shadow-gray-400"
               onClick={() => setOpen(false)}
@@ -136,7 +139,7 @@ const Navbar = () => {
           {data.map((el) => (
             <li className="cursor-default"
                 key={el.id}>
-              <a
+              <Link
                 onClick={() => {
                   setActive(el.name);
                   setOpen(false);
@@ -148,7 +151,7 @@ const Navbar = () => {
                 href={el.to}
               >
                 {el.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

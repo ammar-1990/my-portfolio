@@ -20,11 +20,11 @@ return ()=>removeEventListener('resize',getHeight)
 
 <img  src={img}   className={`w-full  ${!pull && ("aspect-video object-cover ")} ${pull && `group-hover:duration-[8s]  duration-[1.5s]  group-hover:translate-y-[-60%] linear`}`} />
 </div>
-<div className={`absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100 duration-300 overflow-hidden `}>
+<div className={`absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100  duration-300 overflow-hidden `}>
 <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-700 to-purple-200 opacity-30'></div>
 
-  <h3 className='cursor-default absolute left-0 w-full text-center capitalize text-sm  text-white  duration-300 px-6 py-2   bg-gradient-to-r from-purple-700 to-purple-200 delay-300' >{name}</h3>
- <p className='text-white capitalize text-center py-2 px-4  text-sm bg-gradient-to-r from-purple-700 to-purple-200 rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  font-medium cursor-pointer'>See More</p>
+  <h3 className='cursor-default absolute left-0 w-full text-center capitalize text-sm  text-white  duration-300 px-6 py-2   bg-gradient-to-r from-purple-700 to-purple-500 delay-300' >{name}</h3>
+ <p className='text-white capitalize text-center py-2 px-4  text-xs bg-gradient-to-r from-purple-700 to-purple-500 rounded-md absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  font-medium cursor-pointer'>More Info</p>
 
 </div> 
 

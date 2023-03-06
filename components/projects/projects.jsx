@@ -1,6 +1,7 @@
 import Project from "../project/Project"
+import Link from "next/link"
 
-const data =[
+export const data =[
   {id:'1', name:'fitness compass', img:'/assets/compass-fitness.png',pull:true,},
   {id:'2', name:'e-commerce', img:'/assets/js-e-commerce.png',pull:false,},
   {id:'3', name:'lost pets', img:'/assets/lost-pets.png',pull:false,},
@@ -20,7 +21,7 @@ const Projects = () => {
       <p className="text-purple-600 uppercase my-6 font-medium tracking-widest">projects</p>
       <h3 className="text-gray-600 uppercase ">What I have built</h3>
       <div className="mt-4 max-w-[1200px] w-full mx-auto grid md:grid-cols-2 gap-6 sm:px-6">
-{data.sort((a,b)=>(b.id-a.id)).map(el=><Project key={el.id} name={el.name} img={el.img}  pull={el.pull}/>)}
+{data.sort((a,b)=>(b.id-a.id)).map(el=><Link key={el.id} href={`/${el.id}`}><Project  name={el.name} img={el.img}  pull={el.pull}/> </Link>)}
 
       </div>
     </div>

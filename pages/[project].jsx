@@ -1,5 +1,8 @@
 
 import {RiRadioButtonFill} from 'react-icons/ri'
+import Link from 'next/link'
+import {TbArrowBack} from 'react-icons/tb'
+
 
 const ProjectId = ({element}) => {
   return (
@@ -7,7 +10,7 @@ const ProjectId = ({element}) => {
     
     <div className='h-[30vh] lg:h-[40vh] overflow-hidden relative w-full'>
       <div className='absolute top-0  left-0 w-full h-full bg-black/70 z-10' />
-      <img src={element.img} className={`${element.pull ?"w-1/2" : 'w-auto '} ${!element.pull && 'md:w-1/2' } block mx-auto`} alt="" />
+      <img src={element.img} className={`${element.pull ?"sm:w-1/2" : 'w-auto '} ${!element.pull && 'md:w-1/2' } block mx-auto`} alt="" />
       <div className='absolute bottom-5 z-20 px-2 lg:px-10'>
 <h3 className='text-white uppercase font-bold '>{element.name}</h3>
 
@@ -41,6 +44,8 @@ const ProjectId = ({element}) => {
       </div>
       </div>
     </div>
+
+    <Link className='w-10 h-10  flex items-center justify-center  mx-auto mt-10 rounded-full shadow-gray-700 shadow-md hover:scale-105 duration-300 text-purple-700' href='/'><TbArrowBack size={20}/></Link>
     </div>
   )
 }

@@ -42,6 +42,7 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [open, setOpen] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [white,setWhite]=useState(false)
 
   useEffect(() => {
    
@@ -58,9 +59,18 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+   if(router.pathname==='/'){
     setActive(
       router?.asPath?.slice(2) === "" ? "home" : router?.asPath?.slice(2)
     );
+setWhite(false)
+   }
+   else{
+    setWhite(true)
+    setActive(null)
+   
+   }
+
     const sections = () => {
       let height = screen.availHeight;
 
@@ -72,18 +82,19 @@ const Navbar = () => {
         if (size.top >= top && size.top <= height / 2) {
           history.pushState("", "", `#${el.id}`);
           setActive(el.id);
+         
         }
-        
+  
       });
     };
     document.addEventListener("scroll", sections);
-
+    
     return () => removeEventListener("scroll", sections);
-  }, []);
-
+  }, [router.pathname]);
+// 
   return (
-    <div className={`fixed h-20 w-full  top-0  ${shadow && "shadow-md"} duration-300 z-40`}>
-      <div className={`p-2 lg:p-10 h-20 flex justify-between items-center`}>
+    <div className={`fixed h-20 w-full  top-0  ${shadow && ("shadow-md bg-[#ecf0f3]")} duration-300 z-40`}>
+      <div  className={`p-2 lg:p-10 h-20 flex justify-between items-center ${(shadow&&white)? "text-gray-600":white?'text-white':'text-gtay-600'}`}>
         <Link scroll={false} onClick={() => setActive("home")} href="/#home">
           <Image alt="img" src={"/assets/Logo.png"} width={125} height={100} />
         </Link>
@@ -102,7 +113,7 @@ const Navbar = () => {
         </ul>
 
         <span
-          className="flex items-center justify-center md:hidden cursor-pointer text-[#1f2937] "
+          className={`flex items-center justify-center md:hidden cursor-pointer  ${(shadow&&white)? "text-gray-600":white?'text-white':'text-gtay-600'} `}
           onClick={() => setOpen(true)}
         >
           <RxHamburgerMenu size={"30px"} />

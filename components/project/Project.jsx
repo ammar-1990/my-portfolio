@@ -25,9 +25,9 @@ return ()=>removeEventListener('resize',getHeight)
   return (
     <motion.div variants={item} initial='start' whileInView='view'
      className="bg-white relative shadow-gray-400 shadow-md p-2 rounded-md group overflow-hidden ability">
-  <div className="w-full aspect-video rounded-md   overflow-hidden">
+  <div className="w-full aspect-video rounded-md relative  overflow-hidden">
 
-<img  src={img}   className={`w-full  ${!pull && ("aspect-video object-cover ")} ${pull && `group-hover:duration-[8s]  duration-[1.5s]  group-hover:translate-y-[-60%] linear`}`} />
+<img  src={img}  className={`w-full  ${!pull && ("aspect-video object-cover ")} ${pull && `group-hover:duration-[8s]  duration-[1.5s]  group-hover:translate-y-[-60%] linear`}`} />
 </div>
 <div className={`absolute top-0 left-0 w-full h-full opacity-0 group-hover:opacity-100  duration-300 overflow-hidden `}>
 <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-700 to-purple-200 opacity-30'></div>

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const Certificate = ({data}) => {
   return (
@@ -19,8 +20,8 @@ const Certificate = ({data}) => {
 <div className="relative  p-2">
 <div
 
-className=" aspect-video rounded-lg overflow-hidden ">
-    <img src={data.img} alt={data.name} className='w-full h-full' />
+className=" aspect-video relative rounded-lg overflow-hidden ">
+    <Image src={data.img} alt={data.name} fill  />
 
 </div>
 <div className="absolute inset-0   bg-gradient-to-r from-purple-700 to-purple-200 opacity-0 group-hover:opacity-30 duration-300"></div>

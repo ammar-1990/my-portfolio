@@ -1,4 +1,5 @@
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const About =()=> {
     return (
@@ -15,8 +16,9 @@ const About =()=> {
             <p className="text-base my-3 text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             <p className="text-base text-gray-600">asdasd asd asd asd asd asd asdasdasd as dasd asd asdasdas das das das das dasd asd asdsad asd asd sad asd sadasdasdas das das dasd asdasdas das </p>
             </div>
-        <div  className="shadow-lg shadow-gray-400 rounded-md p-3 hover:scale-105 duration-300">
-            <img src='/assets/Labtop.jpeg' />
+        <div  className="shadow-lg  w-[100%] relative overflow-hidden shadow-gray-400 rounded-md p-3 hover:scale-105 duration-300">
+            <div className="relative aspect-video rounded-md overflow-hidden "><Image fill src='/assets/Labtop.jpeg' alt='img' /></div>
+            
         </div>
     </motion.div>
     </div>

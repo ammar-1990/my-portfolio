@@ -11,6 +11,7 @@ import toast, { Toaster } from 'react-hot-toast';
 
 import { RxDoubleArrowUp } from "react-icons/rx";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 
@@ -78,10 +79,11 @@ const Contact = () => {
 
       <div className="flex flex-col w-full lg:flex-row gap-4 max-w-[1200px] mx-auto mt-5">
         <motion.div initial={{x:-20,opacity:0}} whileInView={{x:0,opacity:1,transition:{duration:1,delay:1}}} className="flex-1 flex flex-col gap-3 p-4 shadow-md shadow-gray-700 rounded-lg pb-8 ">
-          <div className="overflow-hidden rounded-lg w-full relative z-[30]">
-            <img
+          <div className="overflow-hidden aspect-video rounded-lg w-full relative z-[30]">
+            <Image
+            fill
               src="/assets/Labtop.jpeg"
-              alt=""
+              alt="img"
               className="hover:scale-110 duration-300 w-full rounded-lg "
             />
           </div>

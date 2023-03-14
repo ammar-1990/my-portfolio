@@ -23,8 +23,8 @@ className=" aspect-video rounded-lg overflow-hidden ">
     <img src={data.img} alt={data.name} className='w-full h-full' />
 
 </div>
-<div className="absolute inset-0  bg-gradient-to-r from-purple-700 to-purple-200 opacity-0 group-hover:opacity-30 duration-300"></div>
-<Link href ={data.link}className='absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%]'><button className="  px-6 py-2 bg-purple-700 text-white opacity-0 group-hover:opacity-100 duration-300 cursor-pointer">Details</button></Link>
+<div className="absolute inset-0   bg-gradient-to-r from-purple-700 to-purple-200 opacity-0 group-hover:opacity-30 duration-300"></div>
+<a href ={data.link} target={'_blank'} className='pointer-events-none group-hover:pointer-events-auto absolute top-1/2 left-1/2 opacity-0 group-hover:opacity-100 duration-300 cursor-pointer translate-x-[-50%] translate-y-[-50%]'><button className="  px-6 py-2 bg-purple-700 text-white ">Details</button></a>
 
 </div>
     </motion.div>

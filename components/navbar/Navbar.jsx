@@ -120,12 +120,12 @@ setWhite(false)
           ))}
         </motion.ul>
 
-        <span
+        <motion.span initial={{x:25}} whileInView={{x:0,transition:{duration:1}}}
           className={`flex items-center justify-center md:hidden cursor-pointer  ${(shadow&&white)? "text-gray-600":white?'text-white':'text-gtay-600'} `}
           onClick={() => setOpen(true)}
         >
           <RxHamburgerMenu size={"30px"} />
-        </span>
+        </motion.span>
       </div>
       <AnimatePresence>
         {open &&   <motion.div

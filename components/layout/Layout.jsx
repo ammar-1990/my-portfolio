@@ -4,7 +4,7 @@ const Layout = ({children}) => {
   return (
     <>
     <Navbar />
-    <main className="h-full ">{children}</main>
+    <main className="overflow-hidden ">{children}</main>
     </>
   )
 }

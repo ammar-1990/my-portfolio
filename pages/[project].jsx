@@ -6,7 +6,7 @@ import {TbArrowBack} from 'react-icons/tb'
 
 const ProjectId = ({element}) => {
   return (
-    <div className='min-h-screen  '> 
+    <div className='min-h-screen pb-8 '> 
     
     <div className='h-[30vh] lg:h-[40vh] overflow-hidden relative w-full'>
       <div className='absolute top-0  left-0 w-full h-full bg-black/70 z-10' />
@@ -45,7 +45,7 @@ const ProjectId = ({element}) => {
       </div>
     </div>
 
-    <Link className='w-10 h-10  flex items-center justify-center  mx-auto mt-10 rounded-full shadow-gray-700 shadow-md hover:scale-105 duration-300 text-purple-700' href='/'><TbArrowBack size={20}/></Link>
+    <Link className='w-10 h-10  flex items-center justify-center  mx-auto mt-10 rounded-full shadow-gray-700 shadow-md hover:scale-105 duration-300 text-purple-700' href='/#projects'><TbArrowBack size={20}/></Link>
     </div>
   )
 }
@@ -54,9 +54,12 @@ export default ProjectId
 
 
 export async function getStaticPaths(){
- 
-const {data}=require('../components/projects/projects')
+  console.log('data')
+const {data}=require('../components/data')
+
 const paths=data.map(el=>({params:{project:el.id}}))
+
+
 
 
 return {
@@ -68,10 +71,10 @@ return {
 
 
 export async function getStaticProps(context){
-  const {data}=require('../components/projects/projects')
+  const {data}=require('../components/data')
   
   const project=context.params.project.toString()
- 
+  console.log('theData',data)
 const element = data.find(el=>el.id===project)
 
 return{

@@ -1,8 +1,9 @@
 import {useState} from 'react'
 import { useEffect } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
-const Project = ({name,img,pull,id}) => {
+const Project = ({name,img,pull,id,i}) => {
 const [height,setHeight]=useState('')
   useEffect(()=>{
 
@@ -15,8 +16,15 @@ document.addEventListener('resize',getHeight)
 
 return ()=>removeEventListener('resize',getHeight)
   },[])
+
+
+  const item ={
+    start:{opacity:0,x:i%2===0?-20:+20},
+    view:{opacity:1,x:0,transition:{duration:1,delay:0.6}}
+  }
   return (
-    <div className="bg-white relative shadow-gray-400 shadow-md p-2 rounded-md group overflow-hidden ability">
+    <motion.div variants={item} initial='start' whileInView='view'
+     className="bg-white relative shadow-gray-400 shadow-md p-2 rounded-md group overflow-hidden ability">
   <div className="w-full aspect-video rounded-md   overflow-hidden">
 
 <img  src={img}   className={`w-full  ${!pull && ("aspect-video object-cover ")} ${pull && `group-hover:duration-[8s]  duration-[1.5s]  group-hover:translate-y-[-60%] linear`}`} />
@@ -29,7 +37,7 @@ return ()=>removeEventListener('resize',getHeight)
 
 </div> 
 
- </div>
+ </motion.div>
   )
 }
 

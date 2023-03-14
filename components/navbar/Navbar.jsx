@@ -9,6 +9,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { ImGithub } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { useRouter } from "next/router";
+import { motion ,AnimatePresence} from "framer-motion";
 const data = [
   {
     id: "1",
@@ -93,24 +94,31 @@ setWhite(false)
   }, [router.pathname]);
 // 
   return (
-    <div className={`fixed h-20 w-full  top-0  ${shadow && ("shadow-md bg-[#ecf0f3]")} duration-300 z-40`}>
+    <motion.div initial={{opacity:0}} animate={{opacity:1,transition:{duration:1.5,delay:0.1}}} className={`fixed h-20 w-full  top-0  ${shadow && ("shadow-md bg-[#ecf0f3]")} duration-300 z-40`}>
       <div  className={`p-2 lg:p-10 h-20 flex justify-between items-center ${(shadow&&white)? "text-gray-600":white?'text-white':'text-gtay-600'}`}>
+        <motion.div initial={{x:-25}} whileInView={{x:0,transition:{duration:1}}}> 
         <Link scroll={false} onClick={() => setActive("home")} href="/#home">
           <Image alt="img" src={"/assets/Logo.png"} width={125} height={100} />
         </Link>
-        <ul className="hidden md:flex items-center h-20">
+        </motion.div>
+        <motion.ul initial={{x:25}} whileInView={{x:0,transition:{duration:1}}} className="hidden md:flex items-center h-20">
           {data.map((el) => (
-            <Link scroll={false} key={el.id} href={el.to}>
+          
               <li
-                className={`uppercase hover:text-purple-700 h-20 flex items-center justify-center px-6 font-medium transition duration-300 text-sm ${
+              key={el.id} 
+                className={`uppercase  h-20 flex relative items-center cursor-default justify-center px-6 font-medium transition duration-300 text-sm ${
                   active === el.name && "active"
                 }`}
               >
+                  <Link className="hover:text-purple-700 duration-300" scroll={false} href={el.to}>
+
                 {el.name}
+                </Link>
+                {active=== el.name && <motion.div layoutId="underline" className="line"></motion.div>}
               </li>
-            </Link>
+           
           ))}
-        </ul>
+        </motion.ul>
 
         <span
           className={`flex items-center justify-center md:hidden cursor-pointer  ${(shadow&&white)? "text-gray-600":white?'text-white':'text-gtay-600'} `}
@@ -119,23 +127,28 @@ setWhite(false)
           <RxHamburgerMenu size={"30px"} />
         </span>
       </div>
-
-      <div
-        className={`fixed top-0 lef-0 w-full h-full bg-black ${
-          open ? "block" : "hidden"
-        } md:hidden opacity-70 transition duration-300`}
-      ></div>
+      <AnimatePresence>
+        {open &&   <motion.div
+      initial={{opacity:0}}
+      animate={{opacity:0.7}}
+      exit={{opacity:0}}
+        className={`fixed top-0 lef-0 w-full h-full bg-black
+          
+         md:hidden opacity-70 transition duration-300`}
+      ></motion.div>}
+    </AnimatePresence>
+   
       <div
         className={`fixed top-0 ${
           open ? "left-0" : "left-[-100%]"
-        }  md:hidden  p-8 bg-[#ecf0f3] h-screen w-[300px] sm:w-[375px] transition-all duration-500 ease-in flex flex-col`}
+        }  md:hidden  p-8 bg-[#ecf0f3] h-screen w-[300px] ease-linear sm:w-[375px] transition-all duration-500  flex flex-col`}
       >
         <div className="border-b border-gray-300">
           <div className="flex justify-between items-center ">
             <Link scroll={false} href='/#home' onClick={()=>setOpen(false)}><Image alt="img" src={"/assets/Logo.png "} width={87} height={35} /></Link>
             
             <span
-              className="flex justify-center items-center cursor-pointer w-10 h-10 rounded-full shadow-lg hover:scale-105 duration-200 shadow-gray-400"
+              className="flex justify-center items-center cursor-pointer w-10 h-10 rounded-full shadow-lg hover:scale-105 duration-200 shadow-gray-400 hover:shadow-gray-700"
               onClick={() => setOpen(false)}
             >
               <IoMdClose />
@@ -173,21 +186,22 @@ setWhite(false)
           </p>
         </div>
         <div className="mt-3 flex items-center justify-between">
-          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105">
+          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <FaLinkedinIn />
           </span>
-          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105">
+          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <ImGithub />
           </span>
-          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105">
+          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <MdEmail />
           </span>
-          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105">
+          <span className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <BsFillPersonLinesFill />
           </span>
         </div>
       </div>
-    </div>
+      
+    </motion.div>
   );
 };
 

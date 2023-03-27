@@ -125,7 +125,7 @@ const certificates =[
     id:'c2',
     name:'meta frontend developer',
     icon:'/assets/meta.png',
-    img:'/assets/metaCertificate-min.jpg',
+    img:'/assets/NPM.png',
     link:'https://www.coursera.org/account/accomplishments/specialization/certificate/A3MKYTPLGJ28'
   },
 ]

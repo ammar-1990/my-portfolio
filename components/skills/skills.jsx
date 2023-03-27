@@ -117,15 +117,15 @@ const certificates =[
   {
     id:'c1',
     name:'google project management',
-    icon:'/assets/ReactNative.svg',
-    img:'/assets/ReactNative.svg',
+    icon:'/assets/google.png',
+    img:'/assets/google.png',
     link:'https://www.coursera.org/account/accomplishments/specialization/certificate/AY8F2BJLHAB5'
   },
   {
     id:'c2',
     name:'meta frontend developer',
-    icon:'/assets/ReactNative.svg',
-    img:'/assets/ReactNative.svg',
+    icon:'/assets/google.png',
+    img:'/assets/google.png',
     link:'https://www.coursera.org/account/accomplishments/specialization/certificate/A3MKYTPLGJ28'
   },
 ]

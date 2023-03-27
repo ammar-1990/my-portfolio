@@ -64,7 +64,7 @@ const greeting = (letters,param)=>{
     letters.split('').map((el,i)=>{return (el===' ' ? ' ' : <motion.p whileHover={()=>rubber()}
      className={`inline-block duration-300 cursor-default ${i >=9 && param && 'text-violet-700'}`}
       initial={{y:-15,opacity:0}}
-       whileInView={{opacity:1,y:0,rotate:0,transition:{delay:i/15,duration:0.1,type:'spring',damping:4,}}} key={i}>{el}</motion.p>)})
+       whileInView={{opacity:1,y:0,rotate:0,transition:{delay:i/15,duration:0.1,type:'spring',damping:4}}} key={i}>{el}</motion.p>)})
   )
 }
 

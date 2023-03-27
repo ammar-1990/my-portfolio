@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=PT+Serif:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+.input {
+  @apply p-2 w-full border-2 rounded-md   duration-300 outline-none focus:border-violet-300 hover:focus:border-violet-300;
+}
+
+.section:not(:first-of-type) {
+  @apply mt-[50px] md:mt-[75px];
+}
+.active {
+  @apply text-violet-700 relative;
+}
+
+.line {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-top-right-radius: 100px 100px;
+  border-top-left-radius: 100px 100px;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  @apply bg-violet-700;
+}
+
+.anime {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: linear-gradient(
+    to bottom,
+    rgb(109 40 217 / 0.8) 10%,
+    rgba(132, 70, 233, 0.9) 5%,
+    rgb(109 40 217 / 1) 70%,
+    rgb(132, 70, 233, 0.9) 1%,
+    rgb(109 40 217 / 0.8) 2%
+  );
+}
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  body {
+    
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide overflow-x-hidden;
+  }
+
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-violet-400;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-violet-100;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-2xl sm:text-4xl;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  button,
+  .btn {
+    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-violet-700 to-violet-500 text-white transition duration-300;
+  }
+
+  .btn:hover {
+    @apply shadow-gray-700;
+  }
+
+  .btn:disabled {
+    opacity: 0.5;
+  }
+
+  .borders {
+    border: 2px solid white;
+    border-right-color: transparent;
+  }
+
+  .intro {
+    position: relative;
+    overflow: hidden;
+    transition-duration: 0.4;
+  }
+
+  .intro::after {
+    content: "";
+
+    @apply w-0 h-0 duration-300 z-[-1] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] translate-y-[-50%] bg-violet-400 rounded-full;
+  }
+
+  .intro:hover::after {
+    @apply w-[250%] h-[250%];
+  }
+}

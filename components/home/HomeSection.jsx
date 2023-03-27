@@ -96,7 +96,7 @@ const greeting = (letters,param)=>{
         <motion.h3 variants={info}  className="text-center text-lg md:text-xl text-gray-700">{greeting("A Front-End and ")}</motion.h3>
         <motion.h3 variants={info}  className="text-center text-lg md:text-xl text-gray-700">{greeting("Mobile cross-platform Developer ")}</motion.h3>
         <motion.p variants={info}  className=" text-sm mx-auto text-center w-[90%] sm:w-[70%] mt-4 text-gray-900">
-         I design responsive websites and Mobile Apps for different SPAs and MPAs scenarios,Ready for big projects.
+         I design responsive websites and Mobile Apps for different SPA and MPA scenarios,Ready for big projects.
           {" "}
         </motion.p>
         </motion.div>

@@ -83,8 +83,8 @@ const Contact = () => {
 
       <div className="flex flex-col w-full lg:flex-row gap-4 max-w-[1200px] mx-auto mt-5">
         <motion.div initial={{x:-20,opacity:0}} whileInView={{x:0,opacity:1,transition:{duration:1,delay:1,type:'spring',damping:13}}} className="flex-1 flex flex-col gap-3 p-4 shadow-md shadow-gray-700 rounded-lg pb-8 ">
-          <div className="p-2 overflow-hidden shadow-md shadow-gray-500 rounded-lg">
-          <div className="overflow-hidden aspect-video rounded-lg w-full relative p-3 bg-red-200 z-[30]  ">
+          <div className="p-2 overflow-hidden shadow-md  shadow-gray-500 rounded-lg">
+          <div className="overflow-hidden aspect-video rounded-lg w-full relative p-3  z-[30]  ">
             <Image
             fill
               src="/assets/Images/Labtop.jpeg"
@@ -113,7 +113,7 @@ const Contact = () => {
               <motion.a target={'_blank'} href="mailto:ammar.web.mobile@gmail.com" whileHover={()=>rubber()} className="p-3 rounded-full shadow-lg shadow-gray-500 text-violet-700 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
                 <MdEmail />
               </motion.a>
-              <motion.a whileHover={()=>rubber()} className="p-3 rounded-full shadow-lg shadow-gray-500 text-violet-700 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
+              <motion.a href="/assets/Ammar-Haidar-CV.pdf" download={true} whileHover={()=>rubber()} className="p-3 rounded-full shadow-lg shadow-gray-500 text-violet-700 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
                 <BsFillPersonLinesFill />
               </motion.a>
             </div>

@@ -111,7 +111,7 @@ const greeting = (letters,param)=>{
           <motion.a target={'_blank'} href="mailto:ammar.web.mobile@gmail.com" whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <MdEmail />
           </motion.a>
-          <motion.a whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
+          <motion.a href="/assets/Ammar-Haidar-CV.pdf" download={true} whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <BsFillPersonLinesFill />
           </motion.a>
         </motion.div>

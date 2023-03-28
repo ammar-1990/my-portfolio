@@ -213,7 +213,7 @@ setWhite(false)
           <a target={'_blank'} href="mailto:ammar.web.mobile@gmail.com" className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <MdEmail />
           </a>
-          <a className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
+          <a href="/assets/Ammar-Haidar-CV.pdf" download={true} className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <BsFillPersonLinesFill />
           </a>
         </div>

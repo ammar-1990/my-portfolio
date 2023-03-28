@@ -4,6 +4,7 @@ import Link from "next/link";
 import { TbArrowBack } from "react-icons/tb";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import Head from "next/head";
 
 const ProjectId = ({ element }) => {
   const router = useRouter();
@@ -13,6 +14,11 @@ useEffect(()=>{window.scrollTo(0,0)},[])
   const myText=element.overView.split('.')
   return (
     <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.8,delay:0.3}} className="min-h-screen pb-2 ">
+      <Head>
+  <title>
+    {element.name}
+  </title>
+</Head>
       <div className="h-[30vh] lg:h-[40vh] overflow-hidden relative w-full bg-zinc-600">
         <div className="absolute top-0  left-0 w-full h-full bg-black/70 z-10" />
         <img

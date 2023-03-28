@@ -119,14 +119,14 @@ const certificates =[
     name:'google project management',
     icon:'/assets/Images/google.png',
     img:'/assets/Images/min.JPG',
-    link:'https://www.coursera.org/account/accomplishments/specialization/certificate/AY8F2BJLHAB5'
+    link:'https://www.coursera.org/account/accomplishments/professional-cert/AY8F2BJLHAB5'
   },
   {
     id:'c2',
     name:'meta frontend developer',
     icon:'/assets/Images/Meta.png',
     img:'/assets/Images/min2.JPG',
-    link:'https://www.coursera.org/account/accomplishments/specialization/certificate/A3MKYTPLGJ28'
+    link:'https://www.coursera.org/account/accomplishments/professional-cert/A3MKYTPLGJ28'
   },
 ]
 

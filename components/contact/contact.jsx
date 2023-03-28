@@ -70,7 +70,7 @@ const Contact = () => {
   }
   
   return (
-    <div style={{backgroundImage:'url("/assets/BG.webp")', backgroundAttachment:'fixed',backgroundSize:'cover'}}
+    <div style={{backgroundImage:'url("/assets/Images/BG.webp")', backgroundAttachment:'fixed',backgroundSize:'cover'}}
       className="min-h-screen relative pt-32 px-2 lg:px-10 section pb-8 "
       id="contact"
     >

@@ -147,7 +147,7 @@ const Skills = () => {
  </div>
 
 
- <motion.h3 initial={{y:-20,opacity:0}} whileInView={{y:0,opacity:1,transition:{delay:0.5,duration:0.4}}} className="uppercase text-gray-600 mt-32 relative">additional certificates</motion.h3>
+ <motion.h3 initial={{y:-20,opacity:0}} whileInView={{y:0,opacity:1,transition:{delay:0.5,duration:0.4}}} className="uppercase text-gray-600 mt-32 relative">courses and certifications</motion.h3>
 
  <div  className="max-w-[1200px] w-full mx-auto grid lg:grid-cols-2 gap-6 sm:px-6 mt-14"> 
  {certificates.map(el=> <Certificate key={el.id} data={el}/>)}

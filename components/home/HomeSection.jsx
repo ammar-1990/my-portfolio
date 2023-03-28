@@ -108,7 +108,7 @@ const greeting = (letters,param)=>{
           <motion.a target={'_blank'}  href="https://www.github.com/ammar-1990" whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <ImGithub />
           </motion.a>
-          <motion.a target={'_blank'} href="mailto:ammar.ali.haidar.1990@gmail.com" whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
+          <motion.a target={'_blank'} href="mailto:ammar.web.mobile@gmail.com" whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <MdEmail />
           </motion.a>
           <motion.a whileHover={()=>rubber()} variants={links}  className="sm:p-4 p-3 rounded-full shadow-lg text-violet-700 bg-[#ecf0f3] shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">

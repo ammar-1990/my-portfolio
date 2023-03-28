@@ -210,7 +210,7 @@ setWhite(false)
           <a target={'_blank'}   href="https://www.github.com/ammar-1990" className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <ImGithub />
           </a>
-          <a target={'_blank'} href="mailto:ammar.ali.haidar.1990@gmail.com" className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
+          <a target={'_blank'} href="mailto:ammar.web.mobile@gmail.com" className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">
             <MdEmail />
           </a>
           <a className="p-3 rounded-full shadow-lg shadow-gray-400 flex items-center cursor-pointer justify-between duration-200 hover:scale-105 hover:shadow-gray-700">

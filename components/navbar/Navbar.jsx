@@ -115,7 +115,7 @@ setWhite(false)
       <div  className={`p-2 overflow-hidden w-screen px-4 lg:p-10 h-20 flex justify-between items-center ${shadow && 'backdrop-blur-md'} ${(shadow&&white)? "text-gray-600 ":white?'text-white':'text-gtay-600'}`}>
         <motion.div initial={{x:-40,opacity:0}} animate={{x:0,opacity:1,transition:{duration:1.5}}}> 
         <Link  onClick={() => setActive("home")} href="/#home">
-          <Image priority alt="img" src={"/assets/Logo.png"} width={100} height={100} />
+          <Image priority alt="img" src={"/assets/Images/Logo.png"} width={100} height={100} />
         </Link>
         </motion.div>
         <motion.ul initial={{x:40,opacity:0}} animate={{x:0,opacity:1,transition:{duration:1.5}}}  className="hidden md:flex items-center h-20">
@@ -163,7 +163,7 @@ setWhite(false)
       >
         <div className="border-b border-gray-300">
           <div className="flex justify-between items-center ">
-            <Link scroll={false} href='/#home' onClick={()=>setOpen(false)}><img  alt="img" className="w-24" src={"/assets/Logo.png "}  /></Link>
+            <Link scroll={false} href='/#home' onClick={()=>setOpen(false)}><img  alt="img" className="w-24" src={"/assets/Images/Logo.png "}  /></Link>
             
             <span
               className="flex justify-center items-center cursor-pointer w-10 h-10 rounded-full shadow-lg hover:scale-105 duration-200 shadow-gray-400 hover:shadow-gray-700"

@@ -87,7 +87,7 @@ const Contact = () => {
           <div className="overflow-hidden aspect-video rounded-lg w-full relative p-3 bg-red-200 z-[30]  ">
             <Image
             fill
-              src="/assets/Labtop.jpeg"
+              src="/assets/Images/Labtop.jpeg"
               alt="img"
               className="hover:scale-110 duration-300  rounded-lg "
             />

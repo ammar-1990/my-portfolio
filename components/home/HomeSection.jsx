@@ -73,7 +73,7 @@ const greeting = (letters,param)=>{
   return (
     <div
       style={{
-        backgroundImage: 'url("/assets/BG2.jpeg")',
+        backgroundImage: 'url("/assets/Images/BG2.jpeg")',
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
       }}

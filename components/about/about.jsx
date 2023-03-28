@@ -70,7 +70,7 @@ const router=useRouter()
         >
           <Image
             fill
-            src="/assets/Labtop2.jpg"
+            src="/assets/Images/Labtop2.jpg"
             alt="img"
             objectFit="cover"
             className="shadow-md shadow-black"

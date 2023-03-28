@@ -9,105 +9,105 @@ const theSkills = [
   {  
     id:'a1',
     name:'HTML',
-    img:'/assets/HTML.png',
+    img:'/assets/Images/HTML.png',
     level:'90%',
     color:'bg-gradient-to-r from-red-500 to-red-900'
   },
   {
     id:'a2',
     name:'CSS',
-    img:'/assets/CSS.png',
+    img:'/assets/Images/CSS.png',
     level:'90%',
     color:'bg-gradient-to-r from-blue-500 to-blue-900'
   },
   {
     id:'a3',
     name:'JavaScript',
-    img:'/assets/JS.png',
+    img:'/assets/Images/JS.png',
     level:'85%',
     color:'bg-gradient-to-r from-yellow-500 to-yellow-900'
   },
   {
     id:'a4',
     name:'Bootstrap',
-    img:'/assets/Bootstrap.png',
+    img:'/assets/Images/Bootstrap.png',
     level:'70%',
     color:'bg-gradient-to-r from-violet-500 to-violet-900'
   },
   {
     id:'a5',
     name:'Tailwind',
-    img:'/assets/Tailwind.png',
+    img:'/assets/Images/Tailwind.png',
     level:'85%',
     color:'bg-gradient-to-r from-cyan-500 to-cyan-900'
   },
   {
     id:'a6',
     name:'React JS',
-    img:'/assets/React.png',
+    img:'/assets/Images/React.png',
     level:'85%',
     color:'bg-gradient-to-r from-sky-500 to-sky-900'
   },
   {
     id:'a7',
     name:'Redux Toolkit',
-    img:'/assets/Redux.png',
+    img:'/assets/Images/Redux.png',
     level:'85%',
     color:'bg-gradient-to-r from-violet-500 to-violet-900'
   },
   {
     id:'a8',
     name:'Chakra UI',
-    img:'/assets/chakra-ui.png',
+    img:'/assets/Images/chakra-ui.png',
     level:'70%',
     color:'bg-gradient-to-r from-teal-500 to-teal-900'
   },
   {
     id:'a9',
     name:'Materia UI',
-    img:'/assets/material-ui.png',
+    img:'/assets/Images/material-ui.png',
     level:'70%',
     color:'bg-gradient-to-r from-blue-500 to-blue-900'
   },
   {
     id:'a10',
     name:'Next JS',
-    img:'/assets/Next.png',
+    img:'/assets/Images/Next.png',
     level:'85%',
     color:'bg-gradient-to-r from-gray-500 to-gray-900'
   },
   {
     id:'a11',
     name:'Sass',
-    img:'/assets/Sass.png',
+    img:'/assets/Images/Sass.png',
     level:'75%',
     color:'bg-gradient-to-r from-pink-500 to-pink-900'
   },
   {
     id:'a12',
     name:'NPM',
-    img:'/assets/NPM.png',
+    img:'/assets/Images/NPM.png',
     level:'70%',
     color:'bg-gradient-to-r from-red-500 to-red-900'
   },
   {
     id:'a13',
     name:'Git Hub',
-    img:'/assets/Git hub.png',
+    img:'/assets/Images/Git hub.png',
     level:'75%',
     color:'bg-gradient-to-r from-gray-500 to-gray-900'
   },
   {
     id:'a14',
     name:'FireBase',
-    img:'/assets/FireBase.png',
+    img:'/assets/Images/FireBase.png',
     level:'70%',
     color:'bg-gradient-to-r from-yellow-500 to-yellow-900'
   },
   {
     id:'a15',
     name:'React Native',
-    img:'/assets/ReactNative.svg',
+    img:'/assets/Images/ReactNative.svg',
     level:'85%',
     color:'bg-gradient-to-r from-sky-500 to-sky-900'
   },
@@ -117,15 +117,15 @@ const certificates =[
   {
     id:'c1',
     name:'google project management',
-    icon:'/assets/google.png',
-    img:'/assets/min.jpg',
+    icon:'/assets/Images/google.png',
+    img:'/assets/Images/min.JPG',
     link:'https://www.coursera.org/account/accomplishments/specialization/certificate/AY8F2BJLHAB5'
   },
   {
     id:'c2',
     name:'meta frontend developer',
-    icon:'/assets/meta.png',
-    img:'/assets/min2.jpg',
+    icon:'/assets/Images/Meta.png',
+    img:'/assets/Images/min2.JPG',
     link:'https://www.coursera.org/account/accomplishments/specialization/certificate/A3MKYTPLGJ28'
   },
 ]

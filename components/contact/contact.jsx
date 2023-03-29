@@ -97,8 +97,8 @@ const Contact = () => {
             <h3 className="capitalize text-violet-700 ">ammar haidar</h3>
             <p className="capitalize text-sm font-bold tracking-wider">front-end developer</p>
             <p className="text-sm">
-              I am available for freelance or full-time positions.Contact me and
-              let,s talk.
+              I am available for freelance or full-time positions, contact me and
+              let's talk.
             </p>
           </div>
           <div className="mt-auto ">

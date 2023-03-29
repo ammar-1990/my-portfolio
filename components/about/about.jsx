@@ -37,23 +37,23 @@ const router=useRouter()
         
         >
           <p className="text-xs sm:text-sm my-3 sm:text-left text-center ">
-          I am a computer engineer with a huge passion for web development , I  speak four languages: English and Russian fluently ,German -B1- and Arabic as a mother language.{" "}
+          I am a computer engineer with a huge passion for web development, I speak four languages: English and Russian fluently, German -B1- and Arabic as a mother language.{" "}
           </p>
           <div className="my-5 flex justify-center gap-4 text-[7px]"><FaAsterisk /><FaAsterisk /><FaAsterisk /></div>
           <p className="text-xs sm:text-sm   sm:text-left text-center">
-            Now I am using ReactJS and NextJS to design the most complicated user interfaces,and with React native I build Mobile Apps for Android and IOS operating systems, I have the capability to start maintain and finish big projects for any common scenario such as Landing page, Blogs website, E commerce, Social media and much more.  {" "}
+            Now I am using ReactJS and NextJS to design the most complicated user interfaces, and with React native I build mobile apps for Android and IOS operating systems, I have the ability to start, maintain and finish big projects for any common scenario such as landing page, blog website, E commerce, social media and much more.  {" "}
           </p>
           <div className="my-5 flex justify-center gap-4 text-[7px]"><FaAsterisk /><FaAsterisk /><FaAsterisk /></div>
          
          
        
 
-          <p className="text-xs sm:text-sm my-3 sm:text-left text-center ">Familiar with Agile termonology and would like to take a part in a collaborative team and get aquainted with quailified developers in order to start a lot of creative ideas together.</p>
+          <p className="text-xs sm:text-sm my-3 sm:text-left text-center ">I am familiar with Agile termonology and would like to take a part in a collaborative team and get aquainted with quailified developers in order to start a lot of creative ideas together.</p>
           <div className="my-5 flex justify-center gap-4 text-[7px]"><FaAsterisk /><FaAsterisk /><FaAsterisk /></div>
-           <p className="text-xs sm:text-sm my-3 sm:text-left text-center "> I develope my self daily and learn new technologies,as well as  best practices for coding in order to get stuff done properly.</p>
+           <p className="text-xs sm:text-sm my-3 sm:text-left text-center "> I develope myself everyday and learn new technologies, as well as  best practices for coding in order to get stuff done properly.</p>
            <div className="my-5 flex justify-center gap-4 text-[7px]"><FaAsterisk /><FaAsterisk /><FaAsterisk /></div>
 
-         <p className="text-xs sm:text-sm   sm:text-left text-center">Now I'm learning NodeJS and in the very near future planning to becom a MERN fullstack developer.</p>
+         <p className="text-xs sm:text-sm   sm:text-left text-center">Now I'm learning NodeJS and working to become a MERN fullstack developer.</p>
           <p className="text-xs sm:text-sm mt-8  text-center  flex justify-center"> <span className="text-violet-700"><RiDoubleQuotesL /></span> Everyday is a learning day <span className="text-violet-700"><RiDoubleQuotesR/></span></p>
         </motion.div>
 

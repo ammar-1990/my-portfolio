@@ -128,6 +128,13 @@ const certificates =[
     img:'/assets/Images/min2.JPG',
     link:'https://www.coursera.org/account/accomplishments/professional-cert/A3MKYTPLGJ28'
   },
+  {
+    id:'c3',
+    name:'meta react native',
+    icon:'/assets/Images/Meta.png',
+    img:'/assets/Images/min3.JPG',
+    link:'https://www.coursera.org/account/accomplishments/specialization/G8XCADNXZDGR'
+  },
 ]
 
 
@@ -149,7 +156,7 @@ const Skills = () => {
 
  <motion.h3 initial={{y:-20,opacity:0}} whileInView={{y:0,opacity:1,transition:{delay:0.5,duration:0.4}}} className="uppercase text-gray-600 mt-32 relative">courses and certifications</motion.h3>
 
- <div  className="max-w-[1200px] w-full mx-auto grid lg:grid-cols-2 gap-6 sm:px-6 mt-14"> 
+ <div  className="max-w-[1200px] w-full mx-auto gap-6 sm:px-6 mt-14 justify-center flex flex-wrap "> 
  {certificates.map(el=> <Certificate key={el.id} data={el}/>)}
  </div>
 

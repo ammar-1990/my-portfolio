@@ -13,7 +13,7 @@ const Certificate = ({data}) => {
        { delay:0.6,
     duration:0.8,type:'spring',damping:13}
     }
-    className=" group rounded-lg shadow-md shadow-gray-500 overflow-hidden">
+    className=" group rounded-lg shadow-md shadow-gray-500 overflow-hidden w-[350px] sm:w-[500px] lg:w-[550px]">
 <div className="text-white relative  bg-violet-700 flex justify-center p-3 gap-2 items-center">
 
 <span className="w-10 h-10 absolute  left-1 rounded-full flex items-center justify-center bg-white p-2"><img className="w-6 " src={data.icon} alt="" /></span>

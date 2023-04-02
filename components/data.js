@@ -117,4 +117,14 @@ export const data = [
     demo:'https://ammar-1990.github.io/dashboard-auth/',
     code:'https://github.com/ammar-1990/dashboard-auth'
   },
+  {
+    id: "13",
+    name: "Next-Dashboard",
+    img: "/assets/Images/next-dash-board.png",
+    pull: false,
+    overView:'This dashboard is only larg screens friendly ,designed in a beautiful dark mode using Nextjs and many other libraries ,like echarts,material tables,and react full callendar,consists of 3 main pages with a lot of functionality',
+    techStack:['NEXT JS','ECHARTS','MATERIAL TABLES','TAILWIND'],
+    demo:'https://next-dashboard-nu.vercel.app/',
+    code:'https://github.com/ammar-1990/netflix-react-clone'
+  },
 ];

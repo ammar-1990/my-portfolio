@@ -111,6 +111,13 @@ const theSkills = [
     level:'85%',
     color:'bg-gradient-to-r from-sky-500 to-sky-900'
   },
+  {
+    id:'a16',
+    name:'Wordpress',
+    img:'/assets/Images/wordpress.png',
+    level:'80%',
+    color:'bg-gradient-to-r from-sky-500 to-sky-900'
+  },
 ]
 
 const certificates =[

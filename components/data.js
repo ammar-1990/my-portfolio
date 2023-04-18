@@ -125,6 +125,16 @@ export const data = [
     overView:'This dashboard is only larg screens friendly ,designed in a beautiful dark mode using Nextjs and many other libraries ,like echarts,material tables,and react full callendar,consists of 3 main pages with a lot of functionality',
     techStack:['NEXT JS','ECHARTS','MATERIAL TABLES','TAILWIND'],
     demo:'https://next-dashboard-nu.vercel.app/',
-    code:'https://github.com/ammar-1990/netflix-react-clone'
+    code:'https://github.com/ammar-1990/next-dashboard'
+  },
+  {
+    id: "14",
+    name: "Amazon-clone",
+    img: "/assets/Images/amazon.png",
+    pull: true,
+    overView:'A complete amazon clone with the ability to add products to cart and remove them, excute payments and observe our orders ,the site is fully responsive and was built with next js ,tailwind ,and redux toolkit',
+    techStack:['NEXT JS','REDUX TOOLKIT','LOCAL STORAGE','TAILWIND'],
+    demo:'https://amazon-next-clone-3p4y.vercel.app/',
+    code:'https://github.com/ammar-1990/amazon-next-clone'
   },
 ];

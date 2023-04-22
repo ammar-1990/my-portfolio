@@ -137,4 +137,14 @@ export const data = [
     demo:'https://amazon-next-clone-3p4y.vercel.app/',
     code:'https://github.com/ammar-1990/amazon-next-clone'
   },
+  {
+    id: "15",
+    name: "Airbnb Clone",
+    img: "/assets/Images/airbnb.png",
+    pull: true,
+    overView:'Fully responsive airbnb clone built with next js using get server side and get static props with the ability to use date range in search input to specify our information ,with a progress bar when navigating between pages',
+    techStack:['NEXT JS',,'TAILWIND'],
+    demo:'https://next-airbnb-app.vercel.app/',
+    code:'https://github.com/ammar-1990/next-airbnb-app'
+  },
 ];

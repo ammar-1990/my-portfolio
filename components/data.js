@@ -134,7 +134,7 @@ export const data = [
     pull: true,
     overView:'A complete amazon clone with the ability to add products to cart and remove them, excute payments and observe our orders ,the site is fully responsive and was built with next js ,tailwind ,and redux toolkit',
     techStack:['NEXT JS','REDUX TOOLKIT','LOCAL STORAGE','TAILWIND'],
-    demo:'https://amazon-next-clone-3p4y.vercel.app/',
+    demo:'https://amazon-next-clone-ebon.vercel.app/',
     code:'https://github.com/ammar-1990/amazon-next-clone'
   },
   {

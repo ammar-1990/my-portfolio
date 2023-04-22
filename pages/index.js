@@ -29,6 +29,7 @@ export default function Home() {
   <title>
     Ammar | Frondend Developer
   </title>
+  <link rel="icon" href="/logo.png" />
 </Head>
 
 <div>

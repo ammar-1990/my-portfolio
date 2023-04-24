@@ -143,8 +143,18 @@ export const data = [
     img: "/assets/Images/airbnb.png",
     pull: true,
     overView:'Fully responsive airbnb clone built with next js using get server side and get static props with the ability to use date range in search input to specify our information ,with a progress bar when navigating between pages',
-    techStack:['NEXT JS',,'TAILWIND'],
+    techStack:['NEXT JS','TAILWIND'],
     demo:'https://next-airbnb-app.vercel.app/',
     code:'https://github.com/ammar-1990/next-airbnb-app'
+  },
+  {
+    id: "16",
+    name: "Instagram clone",
+    img: "/assets/Images/insta.png",
+    pull: true,
+    overView:'Fully responsive Instagram clone built with Next js Firebase and tailwind with the ability to create new users, authentication, add posts , add comments and likes in addition to profile and post images with a fully checked signin and signout operation',
+    techStack:['NEXT JS',"FIREBASE",'TAILWIND'],
+    demo:'https://next-insta-app.vercel.app/',
+    code:'https://github.com/ammar-1990/next-insta-app'
   },
 ];

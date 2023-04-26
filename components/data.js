@@ -157,4 +157,14 @@ export const data = [
     demo:'https://next-insta-app.vercel.app/',
     code:'https://github.com/ammar-1990/next-insta-app'
   },
+  {
+    id: "17",
+    name: "NextJS-13 News App",
+    img: "/assets/Images/next13-app.png",
+    pull: true,
+    overView:'Fully responsive News App whith Nextjs 13 ,using 3rd party API to fetch real data ,By implementing ServerSide rendering , caching data ,and getStaticParams,the data is categoriezed and could be fetched dynamically using search input,we can switch between dark and ligh mode using next-theme.',
+    techStack:['NEXT JS -13',"NEXT-THEME",'TAILWIND','3rd PARTY API '],
+    demo:'https://next13-news-app-flame.vercel.app/',
+    code:'https://github.com/ammar-1990/next13-news-app'
+  },
 ];

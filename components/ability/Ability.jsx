@@ -4,7 +4,7 @@ import { useCountUp } from "react-countup";
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const Ability = ({ name, img, level,color }) => {
+const Ability =  ({ name, img, level,color }) => {
   const countUpRef = useRef(null);
   const theLevel = level.slice(0, level.length - 1);
   const { countUp, start, reset } = useCountUp({
@@ -20,6 +20,9 @@ const Ability = ({ name, img, level,color }) => {
     start: { y:-20, opacity: 0 },
     view: { y:0,opacity: 1 ,transition:{type:'spring',damping:5,delay:0.6}},
   };
+
+
+   
   return (
     <motion.div
       variants={item}

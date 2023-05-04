@@ -167,4 +167,14 @@ export const data = [
     demo:'https://next13-news-app-flame.vercel.app/',
     code:'https://github.com/ammar-1990/next13-news-app'
   },
+  {
+    id: "18",
+    name: "NextJS Reddit Clone",
+    img: "/assets/Images/reddit.png",
+    pull: false,
+    overView:"In this project, I have built a fully functional subreddit clone using Next.js, Supabase, and Tailwind. The clone allows users to create new posts, add comments to existing posts, and vote on posts. Additionally, it features a subreddit page where users can browse all posts related to a particular subreddit. I used Next.js to build a fast and efficient web application that delivers a seamless user experience. Leveraging the power of Supabase, I was able to store and manage data in a reliable and scalable way. And with the help of Tailwind, I created a visually appealing and responsive user interface that looks great on any device.",
+    techStack:['NEXT JS',"SUPABASE",'TAILWIND',],
+    demo:'https://next-reddit-app.vercel.app/',
+    code:'https://github.com/ammar-1990/next-reddit-app'
+  },
 ];

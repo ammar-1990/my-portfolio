@@ -182,9 +182,9 @@ export const data = [
     name: "NextJS Whats App  Clone",
     img: "/assets/Images/whatsapp.png",
     pull: false,
-    overView:"This is a real-time messaging app built with Next.js and Firebase 9. Users can register new accounts, log in, and log out. Once logged in, they can create new chats by entering the email address of the user they want to chat with. The app uses Firebase Realtime Database to store chat messages and sync them in real time between users.",
+    overView:"This is a real-time messaging app built with Next-js and Firebase 9. Users can register new accounts, log in, and log out. Once logged in, they can create new chats by entering the email address of the user they want to chat with. The app uses Firebase Realtime Database to store chat messages and sync them in real time between users",
     techStack:['NEXT JS',"FIREBASE",'TAILWIND',"MATERIAL UI"],
-    demo:'https://next-reddit-app.vercel.app/',
+    demo:'https://next-whats-app-clone.vercel.app/',
     code:'https://github.com/ammar-1990/next-whatsApp-clone'
   },
 ];

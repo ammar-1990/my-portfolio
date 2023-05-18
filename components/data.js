@@ -187,4 +187,14 @@ export const data = [
     demo:'https://next-whats-app-clone.vercel.app/',
     code:'https://github.com/ammar-1990/next-whatsApp-clone'
   },
+  {
+    id: "20",
+    name: "MERN Fiverr Clone",
+    img: "/assets/Images/fiverr.png",
+    pull: true,
+    overView:"full-stack Fiverr clone using the MERN stack, featuring user registration and authentication with JWT and cookies, gig creation and order placement, and messaging between buyers and sellers. The application included gig filtering and search capabilities to help users find the services they need.The front-end of the application was built using React, and the back-end was implemented using Node.js and Express. MongoDB was used for data storage and retrieval. JSON Web Tokens (JWT) and cookies were used for user authentication and security. Throughout the project, I gained valuable experience in developing a full-stack web application and working with technologies such as React, Node.js, Express, MongoDB, and JWT. I also learned about the importance of user authentication and security in web applications, and how to implement these features using JWT and cookies.",
+    techStack:['MONGO DB',"REACT JS",'EXPRESS JS',"NODE JS","TAILWIND","JWT"],
+    demo:'https://inspiring-cranachan-f783e0.netlify.app/',
+    code:'https://github.com/ammar-1990/fiverr-frontend'
+  },
 ];

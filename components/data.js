@@ -256,4 +256,23 @@ export const data = [
     demo: "https://main--glistening-puppy-1f4fc0.netlify.app",
     code: "https://github.com/ammar-1990/MERN-app-chat",
   },
+  {
+    id: "22",
+    name: "MERN Blog-App",
+    img: "/assets/Images/mern-blog.png",
+    pull: true,
+    overView:
+      " I have created a fully functional blog website that allows users to create, edit, and delete posts, filter them by categories, and perform login and logout operations. The website is built using the latest technologies, including React, Node.js, Express, and MongoDB. Here are some of the key features of the website. User authentication: Users can create accounts, log in, and log out of the website. Authentication is handled securely using JWT tokens.CRUD operations: Users can create, read, update, and delete their own posts. The website also has an admin panel that allows the administrator to manage all the posts on the website. Filtering by categories: Users can filter posts by categories, making it easy to find the posts they are interested in.Responsive design: The website is designed to look great on all devices, including desktops, tablets, and smartphones. Overall, this project showcases my skills as a MERN full-stack developer and demonstrates my ability to build complex web applications from the ground up.",
+    techStack: [
+      "MONGO DB",
+      "REACT JS",
+      "EXPRESS JS",
+      "NODE JS",
+      "TAILWIND",
+      "JWT",
+      
+    ],
+    demo: "https://ornate-baklava-4c1bf8.netlify.app/",
+    code: "https://github.com/ammar-1990/mern-blog-app",
+  },
 ];

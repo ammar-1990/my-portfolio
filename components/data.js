@@ -275,4 +275,39 @@ export const data = [
     demo: "https://ornate-baklava-4c1bf8.netlify.app/",
     code: "https://github.com/ammar-1990/mern-blog-app",
   },
+  {
+    id: "23",
+    name: "NEXT E_COMMERCE DASHBOARD",
+    img: "/assets/Images/next-dashboard.png",
+    pull: false,
+    overView:
+      "I developed a full-stack dashboard web application using Next.js, MongoDB, and Tailwind. The dashboard provides administrators with full control over the application's products, categories, and orders. Administrators can register, login, and manage the application's products by adding, editing, and deleting them. They can also manage the application's categories and view all orders placed by users.This project demonstrates my ability to develop complex back-end applications using modern tools and technologies. I utilized Next.js for server-side rendering, MongoDB for data storage, and Tailwind for styling. The dashboard's intuitive and user-friendly interface showcases my proficiency in creating applications that meet the unique needs of administrators.",
+    techStack: [
+      "MONGO DB",
+      "NEXT JS",
+      "TAILWIND JS",
+      "JWT",
+      
+    ],
+    demo: "https://next-full-ecommerce.vercel.app/",
+    code: "https://github.com/ammar-1990/next-full-ecommerce/tree/main/admin",
+  },
+  {
+    id: "24",
+    name: "NEXT E_COMMERCE WEBSITE",
+    img: "/assets/Images/next-ecommerce-front.png",
+    pull: true,
+    overView:
+      "I developed a full-stack web application using Next.js, MongoDB, Redux, and Tailwind. The application allows users to browse the latest products, all products, and categories, as well as filter products by category, add and remove products from their cart, and place orders. The application's state is managed by Redux, providing a seamless and responsive user experience. This project demonstrates my ability to develop complex full-stack applications using modern tools and technologies. I utilized Next.js for server-side rendering, MongoDB for data storage, Redux for state management, and Tailwind for styling. The front-end's intuitive and user-friendly interface showcases my proficiency in creating applications that meet the unique needs of end-users.",
+    techStack: [
+      "MONGO DB",
+      "NEXT JS",
+      "TAILWIND JS",
+      "JWT",
+      "REDUX TOOLKIT"
+      
+    ],
+    demo: "https://next-full-ecommerce-fkss.vercel.app/",
+    code: "https://github.com/ammar-1990/next-full-ecommerce/tree/main/front",
+  },
 ];
